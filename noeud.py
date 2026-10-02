@@ -1,11 +1,14 @@
 # noeud.py
 
+# une modification (urin)
+
 class Noeud:
     def __init__(self, valeur):
         """
         Initialise un noeud.
         
         :param valeur: str, int ou float représentant la valeur du noeud.
+
         """
         if not isinstance(valeur, (str, int, float)):
             raise TypeError("La valeur doit être de type str, int ou float.")
@@ -18,6 +21,7 @@ class Noeud:
         Ajoute un noeud enfant à la liste des enfants.
         
         :param enfant: Objet de type Noeud à ajouter.
+
         """
         if not isinstance(enfant, Noeud):
             raise TypeError("L'enfant doit être une instance de la classe Noeud.")
@@ -30,6 +34,7 @@ class Noeud:
         Initialise un noeud.
         
         :param valeur: str, int ou float représentant la valeur du noeud.
+
         """
         if not isinstance(valeur, (str, int, float)):
             raise TypeError("La valeur doit être de type str, int ou float.")
